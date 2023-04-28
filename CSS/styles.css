@@ -1,0 +1,64 @@
+/*-------- Base Style --------*/
+heading {
+    display: block;
+    padding: 1px;
+    text-align: center;
+    background: blue;
+    color: white;
+    font-size: .7em;
+}
+
+section {
+    text-align: center;
+    border-bottom: 5px solid blue;
+}
+h2 {
+   margin-bottom: 0; 
+}
+.info {
+    margin-top: 10px;
+}
+.contact-information,
+.newsletter1 {
+    border: none;
+    margin: 30px 20px 30px;
+}
+.contact-info,
+.newsletter2 {
+    padding-bottom: 10px;
+}
+.news-info {
+    margin-bottom: 5px;
+}
+
+main,
+footer {
+    background: white;
+}
+
+
+
+
+
+
+/*-------- Flexbox Style --------*/
+
+
+
+
+
+
+
+
+
+
+/*-------- Media Queries --------*/
+
+
+
+
+
+
+
+
+
