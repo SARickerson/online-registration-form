@@ -16,6 +16,17 @@ h2,
     font-size: 1.2em;
 }
 
+
+/*-------- Flexbox Style --------*/
+div,
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
 /*-------- Base Style --------*/
 * {
     box-sizing: border-box;
@@ -72,7 +83,6 @@ h2 {
 #city,
 #state,
 textarea {
-    display: block;
     margin: 10px 2px 2px;  
     background: rgba(0,0,0,.1);
     border: 0;
@@ -86,11 +96,10 @@ textarea {
 #state,
 textarea {
     padding: 10px;
-    width: 100%;
+    flex-basis: 70%;
 }
 
 #zip {
-    display: block;
     padding: 10px;
     margin: 10px 2px;
     width: 50%;
@@ -173,28 +182,19 @@ textarea:focus {
     transition-property: font-size;
     transition-duration: 4s;
 }
-/*-------- Flexbox Style --------*/
-div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-
 
 /*-------- Media Queries --------*/
 
 @media (min-width: 768px) {
-#zip {
-        display: inline;
-        margin-left: 80px;
-        width: 30%;
-    }
+
+div,
 .row {
    flex-direction: row;
-   justify-content: flex-end;
+   justify-content: flex-start;
+   
 }
 .row > label {
+    flex-basis: 30%;
     flex: 1;
     padding: .5em 1em .5em 0;
 }
@@ -204,16 +204,16 @@ div {
 #address,
 #city,
 #state {  
-    width: 70%;
+    flex-basis: 70%;
     margin: 5px 0 20px 30px;
 }
-#zip {   
-    width: 30%;
-    margin: 5px 0 20px 30px;
+#zip { 
+    flex-basis: 30%;
+    margin: 0 0 20px 0;
 }
 
 main {
-    margin: 0 25%;  
+    margin: 0 20%;  
 }
 .contact-information,
 .newsletter1 {
