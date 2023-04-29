@@ -23,19 +23,19 @@
                 <legend class="contact-info">Contact Information</legend>
                 
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required" required>
+                <input type="text" id="name" name="user_name" placeholder="Required" required><br>
                 <label for="email">Email Address</label>
-                <input type="text" id="email" name="user_email" placeholder="Required" required>
+                <input type="text" id="email" name="user_email" placeholder="Required" required><br>
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone" placeholder="###-###-####">
+                <input type="tel" id="phone" name="user_phone" placeholder="###-###-####"><br>
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address" placeholder="Street Address">
+                <input type="text" id="address" name="user_address" placeholder="Street Address"><br>
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city" placeholder="City">
+                <input type="text" id="city" name="user_city" placeholder="City"><br>
                 
                 <label for="state">State</label>
-                <select id="state" name="user_state" placeholder="Choose State">
-                    <option value="" disabled selected>Choose State</option>
+                <select id="state" name="user_state"><br>
+                    <option value="" hidden selected>Choose State</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
                     <option value="arizona">Arizona</option>
@@ -86,7 +86,7 @@
                     <option value="west virginia">West Virginia</option>
                     <option value="wisconsin">Wisconsin</option>
                     <option value="wyoming">Wyoming</option>
-                
+                </select>
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user_zip" placeholder="Zip Code">
             </fieldset>
@@ -95,17 +95,17 @@
                 <p class="news-info">Select the newsletters you would like to receive</p>
                 
                 <input type="checkbox" id="html-news" name="html-news">
-                <label for="html-news">HTML News</label>
+                <label for="html-news">HTML News</label><br>
                 <input type="checkbox" id="css-news" name="css-news">
-                <label for="css-news">CSS News</label>
+                <label for="css-news">CSS News</label><br>
                 <input type="checkbox" id="java-news" name="java-news">
-                <label for="java-news">Javascript News</label>
+                <label for="java-news">Javascript News</label><br>
                 
-                <label>Newsletter format</label>
+                <p class="format">Newsletter format</p>
                 <input type="radio" id="html" name="news">
-                <label>HTML</label>
+                <label for="html">HTML</label><br>
                 <input type="radio" id="plain" name="news">
-                <label>Plain text</label>
+                <label for="plain">Plain text</label><br>
 
                 <label for="topics">Other topics you'd like to hear about</label>
                 <textarea id="topics" name="topics"></textarea>
