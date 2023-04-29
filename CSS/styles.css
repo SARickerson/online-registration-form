@@ -7,7 +7,7 @@ heading {
     display: block;
     padding: 1px;
     text-align: center;
-    background: blue;
+    background: #1b3836;
     color: white;
     font-size: .7em;
 }
@@ -15,7 +15,7 @@ heading {
 section {
     margin: 0 10px;
     text-align: center;
-    border-bottom: 5px double blue;
+    border-bottom: 5px double #1b3836;
 }
 h2 {
    margin-bottom: 0; 
@@ -28,7 +28,7 @@ h2 {
     border: none;
 }
 .contact-information {
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #1b3836;
 }
 .contact-info {
     padding: 5px;
@@ -69,6 +69,7 @@ textarea {
     background: rgba(0,0,0,.2);
     border: 0;
 }
+
 #html-news,
 #css-news,
 #java-news,
@@ -87,11 +88,27 @@ select {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
-    background: hotpink;
+    background: #44807d;
     color: white;
     border: 0;
     border-radius: 5px;
 }
+#sign-up:hover {
+    background-color: #2a4c4a;
+    cursor: pointer;
+}
+#state,
+#html-news,
+#css-news,
+#java-news,
+#html,
+#plain {
+    cursor: pointer;
+}
+select:focus {
+    background: rgb(214, 248, 192);
+}
+
 main,
 footer {
     background: white;
@@ -103,27 +120,14 @@ footer {
     color: #999;
 }
 
-
-
-
 /*-------- Flexbox Style --------*/
-
-
-
-
-
-
-
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 
 
 /*-------- Media Queries --------*/
-
-
-
-
-
-
-
-
 
