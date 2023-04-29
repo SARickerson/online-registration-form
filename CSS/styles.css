@@ -1,3 +1,21 @@
+/*-------- Font Style --------*/
+main,
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h1,
+h2,
+.contact-info,
+.newsletter2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.contact-info,
+.newsletter2 {
+    font-size: 1.2em;
+}
+
 /*-------- Base Style --------*/
 * {
     box-sizing: border-box;
@@ -26,6 +44,7 @@ h2 {
 .contact-information,
 .newsletter1 {
     border: none;
+    margin-top: 20px;
 }
 .contact-information {
     border-bottom: 3px solid #1b3836;
@@ -52,38 +71,51 @@ h2 {
 #address,
 #city,
 #state,
-select,
 textarea {
-    padding: 10px;
-    margin: 10px 2px;
-    width: 100%;
-    background: rgba(0,0,0,.2);
+    display: block;
+    margin: 10px 2px 2px;  
+    background: rgba(0,0,0,.1);
     border: 0;
     border-radius: 5px;
 }
+#name,
+#email,
+#phone,
+#address,
+#city,
+#state,
+textarea {
+    padding: 10px;
+    width: 100%;
+}
+
 #zip {
     display: block;
     padding: 10px;
     margin: 10px 2px;
     width: 50%;
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.1);
     border: 0;
+    border-radius: 5px;
 }
 
 #html-news,
 #css-news,
 #java-news,
 #html,
-#plain {
-    display: inline;
+#plain {   
     margin: 10px;
 }
 #plain {
     margin-bottom: 30px;
 }
+#topics {
+    padding: 1px;
+}
 select {
     color: grey;
 }
+
 #sign-up {
     padding: 10px;
     margin: 10px 0;
@@ -112,16 +144,37 @@ select:focus {
 main,
 footer {
     background: white;
-    margin: 20px 5px 20px;
+    margin: 5px 5px;
 }
 
+.info,
 footer {
     text-align: center;
     color: #999;
 }
-
+input[id="name"],
+input[id="email"] {
+    text-align: right;
+}
+input[id="name"]:focus,
+input[id="email"]:focus {
+    text-align: left;
+}
+#name:focus,
+#email:focus,
+#phone:focus,
+#address:focus,
+#city:focus,
+#state:focus,
+#zip:focus,
+textarea:focus {
+    background: #a9f5d8;
+    font-size: 1.2em;
+    transition-property: font-size;
+    transition-duration: 4s;
+}
 /*-------- Flexbox Style --------*/
-body {
+div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -131,3 +184,47 @@ body {
 
 /*-------- Media Queries --------*/
 
+@media (min-width: 768px) {
+#zip {
+        display: inline;
+        margin-left: 80px;
+        width: 30%;
+    }
+.row {
+   flex-direction: row;
+   justify-content: flex-end;
+}
+.row > label {
+    flex: 1;
+    padding: .5em 1em .5em 0;
+}
+#name,
+#email,
+#phone,
+#address,
+#city,
+#state {  
+    width: 70%;
+    margin: 5px 0 20px 30px;
+}
+#zip {   
+    width: 30%;
+    margin: 5px 0 20px 30px;
+}
+
+main {
+    margin: 0 25%;  
+}
+.contact-information,
+.newsletter1 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+}
