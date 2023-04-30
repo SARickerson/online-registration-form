@@ -31,7 +31,9 @@ div,
 * {
     box-sizing: border-box;
 }
-
+body {
+    background: rgba(204, 203, 203, 0.274);
+}
 header {
     display: block;
     padding: 1px;
@@ -152,7 +154,6 @@ select:focus {
 
 main,
 footer {
-    background: white;
     margin: 5px 5px;
 }
 
